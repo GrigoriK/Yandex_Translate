@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppTheme2"
+    tools:context="com.example.grishany.yandex_mobilization2017.Main_fragment"
+    android:orientation="vertical"
+    android:weightSum="100"
+
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/frame_color"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/change"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_swap_horiz_black_24dp"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+        <TextView
+            android:id="@+id/language_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/change"
+            android:textSize="19sp"
+            android:layout_centerVertical="true"
+            android:text="Русский"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/language_translate"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/change"
+
+            android:text="Английский"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </RelativeLayout>
+
+
+ <LinearLayout
+     android:layout_marginBottom="20dp"
+     android:layout_marginLeft="10dp"
+     android:layout_marginRight="10dp"
+     android:layout_marginTop="12dp"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:orientation="vertical"
+         android:layout_weight="40"
+         android:id="@+id/input"
+         android:weightSum="100"
+         android:background="@drawable/no_relative"
+         android:layout_height="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+         android:weightSum="100"
+        android:layout_weight="90"
+
+        tools:ignore="NestedWeights">
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:background="@drawable/edit_text"
+            android:ellipsize="start"
+            android:textSize="17sp"
+            android:paddingLeft="9dp"
+            android:paddingRight="5dp"
+            android:gravity="left"
+
+            android:hint="@string/text_EditText"
+            android:inputType="textMultiLine"
+            tools:ignore="InefficientWeight,NestedWeights,RtlHardcoded" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image_voice"
+                android:layout_gravity="right"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:srcCompat="@drawable/ic_mic_black_24dp"
+                tools:ignore="ContentDescription,RtlHardcoded"
+                android:contentDescription="@string/voice" />
+            <ImageView
+                android:layout_gravity="right"
+                android:id="@+id/image_sound1"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:visibility="invisible"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_volume_up_black_24dp"
+                tools:ignore="RtlHardcoded"
+                android:contentDescription="@string/sound"  />
+
+        </LinearLayout>
+
+    </LinearLayout>
+         <ImageView
+             android:layout_gravity="left"
+             android:id="@+id/delete"
+             android:layout_width="30dp"
+             android:layout_weight="10"
+             android:visibility="invisible"
+             android:layout_height="30dp"
+             app:srcCompat="@drawable/ic_clear_black_24dp"
+             tools:ignore="RtlHardcoded"
+             android:clickable="true"
+             android:onClick="onClick"
+             android:contentDescription="@string/sound" />
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="60"
+        android:weightSum="100"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/textTrans"
+            android:layout_weight="80"
+            android:layout_height="wrap_content"
+
+             android:paddingLeft="9dp"
+            android:paddingRight="5dp"
+              android:text=""
+            android:textSize="17sp"
+            tools:ignore="NestedWeights" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image_sound2"
+                android:layout_gravity="right"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_volume_up_black_24dp"
+                tools:ignore="RtlHardcoded"
+                android:contentDescription="@string/sound" />
+            <ImageView
+                android:id="@+id/image_favourites"
+                android:layout_gravity="right"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:visibility="invisible"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_turned_in_black_24dp"
+                tools:ignore="RtlHardcoded"
+                android:contentDescription="@string/favourites"/>
+            <ImageView
+                android:layout_gravity="right"
+                android:id="@+id/Transmit"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:visibility="invisible"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_share_black_24dp"
+                tools:ignore="RtlHardcoded"
+                android:contentDescription="@string/share"/>
+
+            <ImageView
+                android:layout_gravity="right"
+                android:id="@+id/image_full_screen"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:visibility="invisible"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_crop_free_black_24dp"
+                tools:ignore="RtlHardcoded"
+                android:contentDescription="@string/full_screen"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+ </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/frame_color</item>
+        <item name="colorPrimaryDark">@color/frame_clicked</item>
+        <item name="colorAccent">@color/frame_clicked</item>
+    </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/frame_color</item>
+        <item name="colorPrimaryDark">@color/frame_clicked</item>
+        <item name="colorAccent">@color/frame_clicked</item>
+    </style>
+<style name="AppName" parent="Theme.AppCompat.Light">
+    <item name="colorPrimary">@color/frame_color</item>
+    <item name="colorPrimaryDark">@color/frame_unclicked</item>
+    <item name="colorAccent">@color/frame_clicked</item>
+
+</style>
+
+
+</resources>
+

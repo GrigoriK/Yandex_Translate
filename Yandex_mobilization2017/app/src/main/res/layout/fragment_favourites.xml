@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.example.grishany.yandex_mobilization2017.HistoryL">
+
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+
+
+    <ListView
+        android:id="@+id/listH"
+        android:layout_weight="91"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </ListView>
+</LinearLayout>

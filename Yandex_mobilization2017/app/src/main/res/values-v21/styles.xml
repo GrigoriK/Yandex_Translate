@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/frame_color</item>
+        <item name="colorPrimaryDark">@color/frame_clicked</item>
+        <item name="colorAccent">@color/frame_clicked</item>
+    </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/frame_color</item>
+        <item name="colorPrimaryDark">@color/frame_clicked</item>
+        <item name="colorAccent">@color/frame_clicked</item>
+    </style>
+    <style name="AppName" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/frame_color</item>
+        <item name="colorPrimaryDark">@color/frame_unclicked</item>
+        <item name="colorAccent">@color/frame_clicked</item>
+
+        <item name="colorControlActivated">@color/swap</item>
+
+        <!-- неактивное состояние ползунка -->
+        <item name="colorSwitchThumbNormal">@android:color/darker_gray</item>
+
+        <!-- цвет дорожки для неактивного состояния (30% прозрачности) -->
+        <item name="android:colorForeground">@color/frame_unclicked</item>
+    </style>
+</resources>

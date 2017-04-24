@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="100"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs2"
+         android:background="@drawable/tab2"
+        android:layout_width="match_parent"
+        android:layout_weight="15"
+        android:layout_height="0dp">
+
+
+    </android.support.design.widget.TabLayout>
+
+
+    <FrameLayout
+        android:layout_weight="88"
+        android:id="@+id/frame_container2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+
+
+</LinearLayout>

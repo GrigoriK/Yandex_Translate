@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.grishany.yandex_mobilization2017.FullScreenActivity">
+    <ImageView
+        android:layout_width="50sp"
+        android:id="@+id/image1"
+        android:layout_height="50sp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_clear_black_24dp"
+        android:layout_alignParentRight ="true"
+        android:layout_alignParentEnd="true"
+        tools:ignore="RtlHardcoded"
+        android:contentDescription="" />
+    <TextView
+        android:id="@+id/text23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="50sp"
+         android:layout_centerInParent="true"
+        android:gravity="center" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <color name="frame_color">#ffd261</color>
+    <color name="swap">#fad201</color>
+    <color name="frame_unclicked">#cccccc</color>
+    <color name="frame_clicked">#fad76e</color>
+    <color name="frame_background">#ffff</color>
+    <color name="text_main">#000</color>
+    <color name="image">#808080</color>
+    <color name="Adapter">#d7d7d7</color>
+
+</resources>
